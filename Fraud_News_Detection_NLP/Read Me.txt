@@ -1,0 +1,4 @@
+1. The code chunk names have serial in which they need to be run
+2. The dataset needed to train and test the model is provided in the DataSet folder
+3. The .pem key to connect the EMR node on which the model has been built is shared herewith. So, please use this .pem key to make authorization SSH to the EMR
+4. The code chunks here contain the extention names based on the programs on which they need to run, except for the sqoop commands which we used in Hue. 

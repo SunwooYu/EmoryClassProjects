@@ -1,0 +1,1 @@
+sqoop import --connect jdbc:mysql://fakenews3.ch8lvxaws3z2.us-east-1.rds.amazonaws.com/fakenews --username admin --password !QAZ2wsx --table fakenews --hive-import --create-hive-table --hive-database 'mydb' --hive-table 'fakenews'
