@@ -1,0 +1,13 @@
+sqoop import --connect jdbc:mysql://fakenews3.ch8lvxaws3z2.us-east-1.rds.amazonaws.com/fakenews --username admin --password !QAZ2wsx --table fakenewstraining --fields-terminated-by | --target-dir /user/hadoop/fakenewstraining
+
+CREATE TABLE fakenewstraining(
+id int,
+author STRING,
+title STRING,
+text STRING,
+label STRING)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '|'
+LINES TERMINATED BY '\n'
+LOCATION '/user/hadoop/fakenewstraining'
+
